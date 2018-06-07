@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "waterRun",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1,
+  "sample": 2,
+  "speed": 1.5,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "e07b6032-78d0-4523-b7a0-ef57bca885bc"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "c95f6672-1eec-429a-9cd0-e6c5cd7a10d8"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
