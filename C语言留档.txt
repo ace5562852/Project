@@ -1,0 +1,85 @@
+#include <stdio.h>
+
+#include<string.h>
+
+struct Student {
+
+    char name[20];
+
+    int grade;
+
+}
+
+
+bool is_n(int n){
+
+if(n<=10)
+
+return true;
+
+else
+
+return false;
+
+}
+
+bool is_name(char name[]){
+	bool a = true;
+	for(int i=0;i<strlen(name);i++){
+		if(name[i]=""||(name[i]>='0'&&name[i]<='9'))
+		a = false;
+	}
+	rerurn a;
+}
+
+int main(){
+
+int n;
+int total;//总分
+float ave;//平均分
+int min;
+int min_num;
+
+bool is_n(int n);//声明函数
+bool is_name(char name[]);
+
+struct Student sheet[n];
+
+printf("请输入学生人数：");
+
+scanf("%d\n",&n);
+
+while(!is_n(n)){
+	printf("请重新输入（人数在10以内）：");
+	scanf("%d\n",&n);
+}
+
+	for(int i=0;i<n;i++){
+		printf("请输入学生姓名与分数：");
+		scanf("%c%d",&sheet[i].name,&sheet[i].grade);
+		while(){
+			if(!is_name(sheet[i].name)）{
+				printf("输入的姓名不能包含空格和数字，请重新输入姓名和成绩：");
+				scanf("%c%d",&sheet[i].name,&sheet[i].grade);		
+			}
+		}
+				
+	}
+	
+	for(int i=0;i<n;i++){
+		total = total + sheet[i].grade;
+	}	
+	ave = total/n;
+	printf("平均分:%0.1f",ave);
+
+	for(int i=0;i<n;i++){
+		if(sheet[i].grade<min){
+		min = sheet[i].grade;
+		min_num = i;
+		}
+	}
+	printf("最低分的同学是：%c  %d"，sheet[min_num].name,sheet[min_num].grade);
+	
+retrun 0;
+
+}
