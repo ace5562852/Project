@@ -1,2 +1,0 @@
-# Poject
-cocos Poject
