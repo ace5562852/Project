@@ -1,2 +1,0 @@
-# example
-cocos code example
